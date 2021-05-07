@@ -1,0 +1,561 @@
+INFO:  May 07 00:07:31 10.16.30.38 正在连接...
+INFO:  May 07 00:07:31 正在执行命令：
+INFO:  May 07 00:07:31 10.16.30.38 [Error 3] Unknown error.
+
+INFO:  May 07 00:07:31 10.16.30.32 正在连接...
+INFO:  May 07 00:07:31 正在执行命令：
+INFO:  May 07 00:07:31 10.16.30.32 [Error 3] Unknown error.
+
+INFO:  May 07 00:07:31 10.16.30.1 正在连接...
+INFO:  May 07 00:07:31 10.16.30.1 [Error 2] Connection timed out.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:08:03 10.16.30.38 正在连接...
+INFO:  May 07 00:08:03 正在执行命令： show cdp nei
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+G_NWE_SC_2960_1_EQ371
+                 Gig 0/1/1         158              S I   WS-C2960- Fas 0/2
+G_NWE_SC_2960_1_EQ371
+                 Gig 0/1/0         158              S I   WS-C2960- Fas 0/3
+CNCS-SC-core-30.1.fhw.sc.foxconn.com
+                 Gig 0/0/0         167             R S I  WS-C3850- Gig 2/0/9
+fhw-hou-r-225.17.fhw.hou.foxconn.com
+                 Gig 0/0/2         146             R S I  ISR4351/K Gig 0/0/1
+
+Total cdp entries displayed : 4
+INFO:  May 07 00:08:03 正在执行命令： show ip eigrp nei
+EIGRP-IPv4 Neighbors for AS(50)
+H   Address                 Interface              Hold Uptime   SRTT   RTO  Q  Seq
+                                                   (sec)         (ms)       Cnt Num
+9   10.254.15.90            Gi0/0/2                  14 1d15h      40   240  0  91953853
+10  10.254.15.190           Gi0/1/0                  13 6d02h       9   100  0  1572594
+3   10.16.30.40             Gi0/0/0                  13 8w1d        1   100  0  8142604
+7   10.16.30.41             Gi0/0/0                  13 10w3d       1   100  0  7878311
+2   10.16.30.37             Gi0/0/0                  13 13w6d       1   100  0  1514438
+8   10.16.30.1              Gi0/0/0                  13 14w1d       1   100  0  2990369
+6   10.16.30.27             Gi0/0/0                  14 14w1d       1   100  0  4692837
+5   10.16.30.32             Gi0/0/0                  13 14w1d       1   100  0  3206258
+4   10.16.30.39             Gi0/0/0                  13 14w1d       1   100  0  997278
+1   10.16.30.23             Gi0/0/0                  13 14w1d       1   100  0  1827743
+0   10.16.30.30             Gi0/0/0                  13 14w1d       3   100  0  3665001
+INFO:  May 07 00:08:03 10.16.30.32 正在连接...
+INFO:  May 07 00:08:03 正在执行命令： show cdp nei
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+CNCS-SC-core-30.1.fhw.sc.foxconn.com
+                 Gig 0/0/0         157             R S I  WS-C3850- Gig 2/0/5
+FSJ-WAN-R-ISR4331-36.6.CNSBG.foxconn.com
+                 Gig 0/0/2         141             R S I  ISR4331/K Gig 0/0/1
+
+Total cdp entries displayed : 2
+INFO:  May 07 00:08:03 正在执行命令： show ip eigrp nei
+EIGRP-IPv4 Neighbors for AS(50)
+H   Address                 Interface              Hold Uptime   SRTT   RTO  Q  Seq
+                                                   (sec)         (ms)       Cnt Num
+9   10.255.16.186           Tu10                     13 3d15h     115   690  0  72254
+0   10.254.15.226           Gi0/0/2                  13 3w5d        1   100  0  908192
+3   10.16.30.37             Gi0/0/0                  13 13w6d       1   100  0  1514443
+8   10.16.30.30             Gi0/0/0                  14 14w1d       6   100  0  3665005
+1   10.16.30.40             Gi0/0/0                  13 14w1d       1   100  0  8142625
+7   10.16.30.27             Gi0/0/0                  10 14w1d       1   100  0  4692837
+6   10.16.30.38             Gi0/0/0                  10 14w1d       1   100  0  3753894
+4   10.16.30.41             Gi0/0/0                  10 14w1d       1   100  0  7878311
+10  10.16.30.1              Gi0/0/0                  12 14w1d       1   100  0  2990380
+5   10.16.30.39             Gi0/0/0                  12 14w1d       1   100  0  997289
+2   10.16.30.23             Gi0/0/0                  12 14w1d       1   100  0  1827748
+INFO:  May 07 00:08:03 10.16.30.1 正在连接...
+INFO:  May 07 00:08:03 10.16.30.1 [Error 2] Connection timed out.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:10:05 10.16.30.38 正在连接...
+INFO:  May 07 00:10:05 正在执行命令： show cdp nei
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+G_NWE_SC_2960_1_EQ371
+                 Gig 0/1/1         156              S I   WS-C2960- Fas 0/2
+G_NWE_SC_2960_1_EQ371
+                 Gig 0/1/0         156              S I   WS-C2960- Fas 0/3
+CNCS-SC-core-30.1.fhw.sc.foxconn.com
+                 Gig 0/0/0         155             R S I  WS-C3850- Gig 2/0/9
+fhw-hou-r-225.17.fhw.hou.foxconn.com
+                 Gig 0/0/2         176             R S I  ISR4351/K Gig 0/0/1
+
+Total cdp entries displayed : 4
+INFO:  May 07 00:10:05 正在执行命令： show ip eigrp nei
+EIGRP-IPv4 Neighbors for AS(50)
+H   Address                 Interface              Hold Uptime   SRTT   RTO  Q  Seq
+                                                   (sec)         (ms)       Cnt Num
+9   10.254.15.90            Gi0/0/2                  12 1d15h      40   240  0  91953885
+10  10.254.15.190           Gi0/1/0                  13 6d02h      12   100  0  1572602
+3   10.16.30.40             Gi0/0/0                  11 8w1d        1   100  0  8142644
+7   10.16.30.41             Gi0/0/0                  13 10w3d       1   100  0  7878334
+2   10.16.30.37             Gi0/0/0                  13 13w6d       1   100  0  1514466
+8   10.16.30.1              Gi0/0/0                  10 14w1d       1   100  0  2990384
+6   10.16.30.27             Gi0/0/0                  11 14w1d       1   100  0  4692837
+5   10.16.30.32             Gi0/0/0                  10 14w1d       1   100  0  3206270
+4   10.16.30.39             Gi0/0/0                  14 14w1d       1   100  0  997295
+1   10.16.30.23             Gi0/0/0                  11 14w1d       1   100  0  1827751
+0   10.16.30.30             Gi0/0/0                  13 14w1d       5   100  0  3665013
+
+INFO:  May 07 00:10:05 10.16.30.32 正在连接...
+INFO:  May 07 00:10:05 正在执行命令： show cdp nei
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+CNCS-SC-core-30.1.fhw.sc.foxconn.com
+                 Gig 0/0/0         136             R S I  WS-C3850- Gig 2/0/5
+FSJ-WAN-R-ISR4331-36.6.CNSBG.foxconn.com
+                 Gig 0/0/2         175             R S I  ISR4331/K Gig 0/0/1
+
+Total cdp entries displayed : 2
+INFO:  May 07 00:10:05 正在执行命令： show ip eigrp nei
+EIGRP-IPv4 Neighbors for AS(50)
+H   Address                 Interface              Hold Uptime   SRTT   RTO  Q  Seq
+                                                   (sec)         (ms)       Cnt Num
+9   10.255.16.186           Tu10                     11 3d15h     115   690  0  72254
+0   10.254.15.226           Gi0/0/2                  12 3w5d        1   100  0  908192
+3   10.16.30.37             Gi0/0/0                  14 13w6d       1   100  0  1514466
+8   10.16.30.30             Gi0/0/0                  14 14w1d       5   100  0  3665013
+1   10.16.30.40             Gi0/0/0                  11 14w1d       1   100  0  8142644
+7   10.16.30.27             Gi0/0/0                  12 14w1d       1   100  0  4692837
+6   10.16.30.38             Gi0/0/0                  12 14w1d       1   100  0  3753910
+4   10.16.30.41             Gi0/0/0                  14 14w1d       1   100  0  7878334
+10  10.16.30.1              Gi0/0/0                  12 14w1d       1   100  0  2990384
+5   10.16.30.39             Gi0/0/0                  11 14w1d       1   100  0  997295
+2   10.16.30.23             Gi0/0/0                  12 14w1d       1   100  0  1827751
+
+INFO:  May 07 00:10:05 10.16.30.1 正在连接...
+INFO:  May 07 00:10:05 10.16.30.1 [Error 2] Connection timed out.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:13:04 10.16.30.38 正在连接...
+INFO:  May 07 00:13:04 正在执行命令：
+INFO:  May 07 00:13:04 10.16.30.38 [Error 3] Unknown error.
+
+INFO:  May 07 00:13:04 10.16.30.32 正在连接...
+INFO:  May 07 00:13:04 正在执行命令：
+INFO:  May 07 00:13:04 10.16.30.32 [Error 3] Unknown error.
+
+INFO:  May 07 00:13:04 10.16.30.1 正在连接...
+INFO:  May 07 00:13:04 10.16.30.1 [Error 2] Connection timed out.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:20:50 10.16.30.38 正在连接...
+INFO:  May 07 00:20:50 正在执行命令：
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+fhw-sc-r-30.38(config)#access-list 11 permit 10.16.31.111
+fhw-sc-r-30.38(config)#access-list 11 permit 10.16.31.222
+fhw-sc-r-30.38(config)#end
+fhw-sc-r-30.38#
+
+INFO:  May 07 00:20:50 10.16.30.32 正在连接...
+INFO:  May 07 00:20:50 正在执行命令：
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+fhw-sc-r-30.32(config)#access-list 11 permit 10.16.31.111
+fhw-sc-r-30.32(config)#access-list 11 permit 10.16.31.222
+fhw-sc-r-30.32(config)#end
+fhw-sc-r-30.32#
+
+INFO:  May 07 00:20:50 10.16.30.1 正在连接...
+INFO:  May 07 00:20:50 10.16.30.1 [Error 2] Connection timed out.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:23:54 10.16.30.38 正在连接...
+INFO:  May 07 00:23:54 正在执行命令：
+write mem
+
+Building configuration...
+
+[OK]
+fhw-sc-r-30.38#
+
+INFO:  May 07 00:23:54 10.16.30.32 正在连接...
+INFO:  May 07 00:23:54 正在执行命令：
+write mem
+Building configuration...
+[OK]
+fhw-sc-r-30.32#
+
+INFO:  May 07 00:23:54 10.16.30.1 正在连接...
+INFO:  May 07 00:23:54 10.16.30.1 [Error 2] Connection timed out.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:24:33 10.16.30.38 正在连接...
+INFO:  May 07 00:24:33 正在执行命令：
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+fhw-sc-r-30.38(config)#access-list 11 permit 10.16.31.111
+% Duplicate permit statement ignored.
+
+fhw-sc-r-30.38(config)#access-list 11 permit 10.16.31.222
+% Duplicate permit statement ignored.
+
+fhw-sc-r-30.38(config)#end
+fhw-sc-r-30.38#
+
+INFO:  May 07 00:24:33 10.16.30.32 正在连接...
+INFO:  May 07 00:24:33 正在执行命令：
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+fhw-sc-r-30.32(config)#access-list 11 permit 10.16.31.111
+% Duplicate permit statement ignored.
+
+fhw-sc-r-30.32(config)#access-list 11 permit 10.16.31.222
+% Duplicate permit statement ignored.
+
+fhw-sc-r-30.32(config)#end
+fhw-sc-r-30.32#
+
+INFO:  May 07 00:24:33 10.16.30.1 正在连接...
+INFO:  May 07 00:24:33 10.16.30.1 [Error 2] Connection timed out.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:30:50 10.16.30.38 正在连接...
+INFO:  May 07 00:30:50 正在执行命令：
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+fhw-sc-r-30.38(config)#access-list 11 permit 10.16.31.111
+% Duplicate permit statement ignored.
+
+fhw-sc-r-30.38(config)#access-list 11 permit 10.16.31.222
+% Duplicate permit statement ignored.
+
+fhw-sc-r-30.38(config)#end
+fhw-sc-r-30.38#
+write mem
+Building configuration...
+
+[OK]
+fhw-sc-r-30.38#
+
+INFO:  May 07 00:30:50 10.16.30.32 正在连接...
+INFO:  May 07 00:30:50 正在执行命令：
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+fhw-sc-r-30.32(config)#access-list 11 permit 10.16.31.111
+% Duplicate permit statement ignored.
+
+fhw-sc-r-30.32(config)#access-list 11 permit 10.16.31.222
+% Duplicate permit statement ignored.
+
+fhw-sc-r-30.32(config)#end
+fhw-sc-r-30.32#
+write mem
+
+Building configuration...
+[OK]
+fhw-sc-r-30.32#
+
+INFO:  May 07 00:30:50 10.16.30.1 正在连接...
+INFO:  May 07 00:30:50 10.16.30.1 [Error 2] Connection timed out.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:44:20 10.16.30.38 正在连接...
+INFO:  May 07 00:44:20 正在执行命令： access-list 11 permit 10.16.31.111
+                      ^
+% Invalid input detected at '^' marker.
+
+INFO:  May 07 00:44:20 正在执行命令： access-list 11 permit 10.16.31.222
+^
+% Invalid input detected at '^' marker.
+
+
+INFO:  May 07 00:44:20 10.16.30.32 正在连接...
+INFO:  May 07 00:44:20 正在执行命令： access-list 11 permit 10.16.31.111
+^
+% Invalid input detected at '^' marker.
+
+INFO:  May 07 00:44:20 正在执行命令： access-list 11 permit 10.16.31.222
+                      ^
+% Invalid input detected at '^' marker.
+
+
+INFO:  May 07 00:44:20 10.16.30.1 正在连接...
+INFO:  May 07 00:44:20 10.16.30.1 [Error 2] Connection timed out.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:50:32 10.16.30.38 正在连接...
+INFO:  May 07 00:50:32 正在执行命令： access-list 11 permit 10.16.31.111
+^
+% Invalid input detected at '^' marker.
+
+INFO:  May 07 00:50:32 正在执行命令： access-list 11 permit 10.16.31.222
+^
+% Invalid input detected at '^' marker.
+
+
+INFO:  May 07 00:50:32 10.16.30.32 正在连接...
+INFO:  May 07 00:50:32 正在执行命令： access-list 11 permit 10.16.31.111
+                      ^
+% Invalid input detected at '^' marker.
+
+INFO:  May 07 00:50:32 正在执行命令： access-list 11 permit 10.16.31.222
+
+                      ^
+% Invalid input detected at '^' marker.
+
+
+INFO:  May 07 00:50:32 10.16.30.1 正在连接...
+INFO:  May 07 00:50:32 10.16.30.1 [Error 2] Connection timed out.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:55:12 10.16.29.247 正在连接...
+INFO:  May 07 00:55:12 10.16.29.247 [Error 3] Unknown error.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:57:46 10.16.29.247 正在连接...
+INFO:  May 07 00:57:46 10.16.29.247 [Error 3] Unknown error.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 00:58:49 10.16.29.247 正在连接...
+INFO:  May 07 01:01:26 10.16.29.247 正在连接...
+INFO:  May 07 01:01:26 正在执行命令： show ver
+Cisco Adaptive Security Appliance Software Version 9.8(2) 
+Firepower Extensible Operating System Version 2.2(2.52)
+Device Manager Version 7.8(2)
+
+Compiled on Sun 27-Aug-17 13:13 PDT by builders
+System image file is "disk0:/asa982-smp-k8.bin"
+Config file at boot was "startup-config"
+
+fhw-sc-int-fw-247 up 232 days 15 hours
+
+Hardware:   ASA5525, 8192 MB RAM, CPU Lynnfield 2394 MHz, 1 CPU (4 cores)
+            ASA: 4191 MB RAM, 1 CPU (1 core)
+Internal ATA Compact Flash, 8192MB
+BIOS Flash MX25L6445E @ 0xffbb0000, 8192KB
+
+Encryption hardware device : Cisco ASA Crypto on-board accelerator (revision 0x1)
+                             Boot microcode        : CNPx-MC-BOOT-2.00
+                             SSL/IKE microcode     : CNPx-MC-SSL-SB-PLUS-0005
+                             IPSec microcode       : CNPx-MC-IPSEC-MAIN-0026
+                             Number of accelerators: 1
+Baseboard Management Controller (revision 0x1) Firmware Version: 2.4
+
+
+ 0: Int: Internal-Data0/0    : address is 3c57.31ef.10aa, irq 11
+ 1: Ext: GigabitEthernet0/0  : address is 3c57.31ef.10af, irq 5
+ 2: Ext: GigabitEthernet0/1  : address is 3c57.31ef.10ab, irq 5
+ 3: Ext: GigabitEthernet0/2  : address is 3c57.31ef.10b0, irq 10
+ 4: Ext: GigabitEthernet0/3  : address is 3c57.31ef.10ac, irq 10
+ 5: Ext: GigabitEthernet0/4  : address is 3c57.31ef.10b1, irq 5
+ 6: Ext: GigabitEthernet0/5  : address is 3c57.31ef.10ad, irq 5
+ 7: Ext: GigabitEthernet0/6  : address is 3c57.31ef.10b2, irq 10
+ 8: Ext: GigabitEthernet0/7  : address is 3c57.31ef.10ae, irq 10
+ 9: Int: Internal-Data0/1    : address is 0000.0001.0002, irq 0
+10: Int: Internal-Control0/0 : address is 0000.0001.0001, irq 0
+11: Int: Internal-Data0/2    : address is 0000.0001.0003, irq 0
+12: Ext: Management0/0       : address is 3c57.31ef.10aa, irq 0
+13: Int: Internal-Data0/3    : address is 0000.0100.0001, irq 0
+
+Licensed features for this platform:
+Maximum Physical Interfaces       : Unlimited      perpetual
+Maximum VLANs                     : 200            perpetual
+Inside Hosts                      : Unlimited      perpetual
+Failover                          : Active/Active  perpetual
+Encryption-DES                    : Enabled        perpetual
+Encryption-3DES-AES               : Enabled        perpetual
+Security Contexts                 : 2              perpetual
+Carrier                           : Disabled       perpetual
+AnyConnect Premium Peers          : 2              perpetual
+AnyConnect Essentials             : Disabled       perpetual
+Other VPN Peers                   : 750            perpetual
+Total VPN Peers                   : 750            perpetual
+AnyConnect for Mobile             : Disabled       perpetual
+AnyConnect for Cisco VPN Phone    : Disabled       perpetual
+Advanced Endpoint Assessment      : Disabled       perpetual
+Shared License                    : Disabled       perpetual
+Total TLS Proxy Sessions          : 2              perpetual
+Botnet Traffic Filter             : Disabled       perpetual
+IPS Module                        : Disabled       perpetual
+Cluster                           : Enabled        perpetual
+Cluster Members                   : 2              perpetual
+
+This platform has an ASA5525 VPN Premium license.
+
+Serial Number: FCH24197BMJ
+Running Permanent Activation Key: 0xe715c95e 0xcca0032d 0xa9a051d4 0xde747c70 0x873fec9f 
+Configuration register is 0x1
+
+Image type          : Release
+Key version         : A
+
+Configuration last modified by enable_15 at 00:58:10.330 UTC Fri May 7 2021
+INFO:  May 07 01:01:26 正在执行命令： sh flash
+--#--  --length--  -----date/time------  path
+   11  4096        Jun 24 2020 08:25:02  log
+   13  750         Sep 16 2020 09:21:06  log/asa-appagent.log
+   23  4096        Jun 24 2020 08:25:04  crypto_archive
+   24  4096        Jun 24 2020 08:25:10  coredumpinfo
+   25  59          Jun 24 2020 08:25:10  coredumpinfo/coredump.cfg
+   93  108822528   Jun 24 2020 08:28:30  asa982-smp-k8.bin
+   94  26970456    Jun 24 2020 08:30:02  asdm-782.bin
+
+8238202880 bytes total (8101793792 bytes free)
+INFO:  May 07 01:01:26 正在执行命令： sh run ssh
+ssh stricthostkeycheck
+ssh 10.191.133.0 255.255.255.0 inside
+ssh 10.191.130.0 255.255.255.0 inside
+ssh 10.191.129.0 255.255.255.0 inside
+ssh 10.176.4.0 255.255.254.0 inside
+ssh 10.168.24.0 255.255.252.0 inside
+ssh 10.168.36.0 255.255.252.0 inside
+ssh 10.134.48.0 255.255.254.0 inside
+ssh 10.195.251.0 255.255.255.0 inside
+ssh 10.199.249.0 255.255.255.0 inside
+ssh 10.245.195.0 255.255.255.0 inside
+ssh 10.16.30.0 255.255.255.0 inside
+ssh 10.18.225.0 255.255.255.0 inside
+ssh 10.16.31.118 255.255.255.255 inside
+ssh timeout 5
+ssh key-exchange group dh-group1-sha1
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 01:01:57 10.16.29.247 正在连接...
+INFO:  May 07 01:01:57 正在执行命令： show ver
+INFO:  May 07 01:01:57 10.16.29.247 [Error 3] Unknown error.
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 01:04:23 10.16.29.247 正在连接...
+INFO:  May 07 01:04:23 正在执行命令： show ver
+INFO:  May 07 01:05:58 10.16.29.247 正在连接...
+INFO:  May 07 01:05:58 正在执行命令： show ver
+Cisco Adaptive Security Appliance Software Version 9.8(2) 
+Firepower Extensible Operating System Version 2.2(2.52)
+Device Manager Version 7.8(2)
+
+Compiled on Sun 27-Aug-17 13:13 PDT by builders
+System image file is "disk0:/asa982-smp-k8.bin"
+Config file at boot was "startup-config"
+
+fhw-sc-int-fw-247 up 232 days 15 hours
+
+Hardware:   ASA5525, 8192 MB RAM, CPU Lynnfield 2394 MHz, 1 CPU (4 cores)
+            ASA: 4191 MB RAM, 1 CPU (1 core)
+Internal ATA Compact Flash, 8192MB
+BIOS Flash MX25L6445E @ 0xffbb0000, 8192KB
+
+Encryption hardware device : Cisco ASA Crypto on-board accelerator (revision 0x1)
+                             Boot microcode        : CNPx-MC-BOOT-2.00
+                             SSL/IKE microcode     : CNPx-MC-SSL-SB-PLUS-0005
+                             IPSec microcode       : CNPx-MC-IPSEC-MAIN-0026
+                             Number of accelerators: 1
+Baseboard Management Controller (revision 0x1) Firmware Version: 2.4
+
+
+ 0: Int: Internal-Data0/0    : address is 3c57.31ef.10aa, irq 11
+ 1: Ext: GigabitEthernet0/0  : address is 3c57.31ef.10af, irq 5
+ 2: Ext: GigabitEthernet0/1  : address is 3c57.31ef.10ab, irq 5
+ 3: Ext: GigabitEthernet0/2  : address is 3c57.31ef.10b0, irq 10
+ 4: Ext: GigabitEthernet0/3  : address is 3c57.31ef.10ac, irq 10
+ 5: Ext: GigabitEthernet0/4  : address is 3c57.31ef.10b1, irq 5
+ 6: Ext: GigabitEthernet0/5  : address is 3c57.31ef.10ad, irq 5
+ 7: Ext: GigabitEthernet0/6  : address is 3c57.31ef.10b2, irq 10
+ 8: Ext: GigabitEthernet0/7  : address is 3c57.31ef.10ae, irq 10
+ 9: Int: Internal-Data0/1    : address is 0000.0001.0002, irq 0
+10: Int: Internal-Control0/0 : address is 0000.0001.0001, irq 0
+11: Int: Internal-Data0/2    : address is 0000.0001.0003, irq 0
+12: Ext: Management0/0       : address is 3c57.31ef.10aa, irq 0
+13: Int: Internal-Data0/3    : address is 0000.0100.0001, irq 0
+
+Licensed features for this platform:
+Maximum Physical Interfaces       : Unlimited      perpetual
+Maximum VLANs                     : 200            perpetual
+Inside Hosts                      : Unlimited      perpetual
+Failover                          : Active/Active  perpetual
+Encryption-DES                    : Enabled        perpetual
+Encryption-3DES-AES               : Enabled        perpetual
+Security Contexts                 : 2              perpetual
+Carrier                           : Disabled       perpetual
+AnyConnect Premium Peers          : 2              perpetual
+AnyConnect Essentials             : Disabled       perpetual
+Other VPN Peers                   : 750            perpetual
+Total VPN Peers                   : 750            perpetual
+AnyConnect for Mobile             : Disabled       perpetual
+AnyConnect for Cisco VPN Phone    : Disabled       perpetual
+Advanced Endpoint Assessment      : Disabled       perpetual
+Shared License                    : Disabled       perpetual
+Total TLS Proxy Sessions          : 2              perpetual
+Botnet Traffic Filter             : Disabled       perpetual
+IPS Module                        : Disabled       perpetual
+Cluster                           : Enabled        perpetual
+Cluster Members                   : 2              perpetual
+
+This platform has an ASA5525 VPN Premium license.
+
+Serial Number: FCH24197BMJ
+Running Permanent Activation Key: 0xe715c95e 0xcca0032d 0xa9a051d4 0xde747c70 0x873fec9f 
+Configuration register is 0x1
+
+Image type          : Release
+Key version         : A
+
+Configuration last modified by enable_15 at 01:02:41.950 UTC Fri May 7 2021
+INFO:  May 07 01:05:58 正在执行命令： sh flash
+--#--  --length--  -----date/time------  path
+   11  4096        Jun 24 2020 08:25:02  log
+   13  750         Sep 16 2020 09:21:06  log/asa-appagent.log
+   23  4096        Jun 24 2020 08:25:04  crypto_archive
+   24  4096        Jun 24 2020 08:25:10  coredumpinfo
+   25  59          Jun 24 2020 08:25:10  coredumpinfo/coredump.cfg
+   93  108822528   Jun 24 2020 08:28:30  asa982-smp-k8.bin
+   94  26970456    Jun 24 2020 08:30:02  asdm-782.bin
+
+8238202880 bytes total (8101793792 bytes free)
+INFO:  May 07 01:05:58 正在执行命令： sh run ssh
+ssh stricthostkeycheck
+ssh 10.191.133.0 255.255.255.0 inside
+ssh 10.191.130.0 255.255.255.0 inside
+ssh 10.191.129.0 255.255.255.0 inside
+ssh 10.176.4.0 255.255.254.0 inside
+ssh 10.168.24.0 255.255.252.0 inside
+ssh 10.168.36.0 255.255.252.0 inside
+ssh 10.134.48.0 255.255.254.0 inside
+ssh 10.195.251.0 255.255.255.0 inside
+ssh 10.199.249.0 255.255.255.0 inside
+ssh 10.245.195.0 255.255.255.0 inside
+ssh 10.16.30.0 255.255.255.0 inside
+ssh 10.18.225.0 255.255.255.0 inside
+ssh 10.16.31.118 255.255.255.255 inside
+ssh timeout 5
+ssh key-exchange group dh-group1-sha1
+
+命令执行完毕，结果请查看result.log文件
+INFO:  May 07 01:08:57 10.16.29.247 正在连接...
+INFO:  May 07 01:08:57 正在执行命令：
+configure terminal
+
+fhw-sc-int-fw-247(config)# ssh 10.16.31.116 255.255.255.255 inside
+
+fhw-sc-int-fw-247(config)# ssh 10.16.31.118 255.255.255.255 inside
+ERROR: entry for address/mask = 10.16.31.118/255.255.255.255 exists
+
+fhw-sc-int-fw-247(config)# ssh 10.16.31.111 255.255.255.255 inside
+
+fhw-sc-int-fw-247(config)# end
+
+fhw-sc-int-fw-247# 
+write mem
+Building configuration...
+Cryptochecksum: 573584cb 96149e97 5c69ca3c 297a99d1 
+
+4238 bytes copied in 0.690 secs
+[OK]
+
+fhw-sc-int-fw-247# 
+
+命令执行完毕，结果请查看result.log文件
