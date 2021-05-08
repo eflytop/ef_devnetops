@@ -13,7 +13,7 @@ from netmiko import ConnectHandler,NetmikoTimeoutException,NetmikoAuthentication
 
 def logininfo(ipaddr):
         return {
-        'device_type': 'cisco_ios',
+        'device_type': 'cisco_asa',
         'ip': ipaddr,
         'username': user,
         'password': passwd,
