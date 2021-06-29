@@ -6,7 +6,6 @@
 from netmiko import ConnectHandler,NetmikoTimeoutException,NetmikoAuthenticationException 
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Border, Side
-from netmiko import ConnectHandler
 from pprint import pprint
 from concurrent.futures import ThreadPoolExecutor
 import getpass
