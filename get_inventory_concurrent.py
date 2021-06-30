@@ -16,17 +16,14 @@ username = input("请输入设备用户名：")
 password = getpass.getpass(prompt='请输入密码:')
 #enpass = getpass.getpass(prompt='请输入enable密码:')
 
-failed_login_ip = []
+succeed_ip_list = []
+failed_login_ip_list = []
 hostname_list = []
 sn_list = []
 uptime_list = []
 model_list = []
 os_version_list = []
 image_list = []
-
-devices = open('device.txt','r')
-ip_list = [x.strip() for x in devices.readlines()]
-devices.close()
 
 wb = Workbook()
 ws = wb.active
@@ -77,50 +74,49 @@ def retrieve_data(ipaddr):
 	   	 	#'secret': enpass,
     }
     try:
-    	conn = ConnectHandler(**connection_info)
-    	print('INFO: ',time.strftime('%x %X'),'已经登录设备：', ipaddr)
-    	hostname = conn.find_prompt().replace('#','')
-    	hostname_list.append(hostname)
-    	output = conn.send_command('show version', use_textfsm=True)
-    	sn = output[0]['serial'][0]
-    	sn_list.append(sn)
-    	uptime = output[0]['uptime']
-    	uptime_list.append(uptime)
-    	model = output[0]['hardware'][0]
-    	model_list.append(model)
-    	os_version = output[0]['version']
-    	os_version_list.append(os_version)
-    	image = output[0]['running_image']
-    	image_list.append(image)
+        with ConnectHandler(**connection_info) as conn:
+            print('INFO: ',time.strftime('%x %X'),'已经登录设备：', ipaddr)
+            output = conn.send_command('show version', use_textfsm=True)
+            succeed_ip_list.append(ipaddr)
+            hostname = conn.find_prompt().replace('#','')
+            hostname_list.append(hostname)
+            sn = output[0]['serial'][0]
+            sn_list.append(sn)
+            uptime = output[0]['uptime']
+            uptime_list.append(uptime)
+            model = output[0]['hardware'][0]
+            model_list.append(model)
+            os_version = output[0]['version']
+            os_version_list.append(os_version)
+            image = output[0]['running_image']
+            image_list.append(image)
 
     except NetmikoAuthenticationException : #认证失败报错记录
     	print('INFO: ',time.strftime('%x %X'),ipaddr,'[Error 1] Authentication failed.')
-    	failed_login_ip.append(ipaddr)
+    	failed_login_ip_list.append(ipaddr)
 
     except NetmikoTimeoutException : #登录超时报错记录
     	print('INFO: ',time.strftime('%x %X'),ipaddr,'[Error 2] Connection timed out.')
-    	failed_login_ip.append(ipaddr)
+    	failed_login_ip_list.append(ipaddr)
 
-    except : #未知报错记录
-    	print('INFO: ',time.strftime('%x %X'),ipaddr,'[Error 3] Unknown error.')
-    	failed_login_ip.append(ipaddr)
+    except Exception as e:
+    	print('INFO: ',time.strftime('%x %X'),ipaddr,e)
+    	failed_login_ip_list.append(ipaddr)
 
-with ThreadPoolExecutor(max_workers=100) as exe:
+with ThreadPoolExecutor(max_workers=5) as exe:
     ip_addresses = get_ip_address()
     results = exe.map(retrieve_data, ip_addresses)
 
-with open('device.txt') as f:
-    f.seek(0)
-    ip_list = f.readlines()
-    number_of_sw = len(ip_list) + 2
-    for hostname, ip, sn, uptime, model, os_version, image, row in zip(hostname_list, ip_list, sn_list, uptime_list, model_list, os_version_list, image_list, range(2, number_of_sw)):
-        ws.cell(row=row, column=1, value=hostname)
-        ws.cell(row=row, column=2, value=ip)
-        ws.cell(row=row, column=3, value=sn)
-        ws.cell(row=row, column=4, value=uptime)
-        ws.cell(row=row, column=5, value=model)
-        ws.cell(row=row, column=6, value=os_version)
-        ws.cell(row=row, column=7, value=image)
+
+row_top_number = len(succeed_ip_list) + 2
+for hostname, ip, sn, uptime, model, os_version, image, row in zip(hostname_list, succeed_ip_list, sn_list, uptime_list, model_list, os_version_list, image_list, range(2, row_top_number)):
+    ws.cell(row=row, column=1, value=hostname)
+    ws.cell(row=row, column=2, value=ip)
+    ws.cell(row=row, column=3, value=sn)
+    ws.cell(row=row, column=4, value=uptime)
+    ws.cell(row=row, column=5, value=model)
+    ws.cell(row=row, column=6, value=os_version)
+    ws.cell(row=row, column=7, value=image)
 
 dims = {}
 for row in ws.rows:
@@ -135,8 +131,10 @@ for col, value in dims.items():
 wb.save('inventory.xlsx')
 
 print('下列主机登录失败，请手动检查：')
-for i in failed_login_ip:
+for i in failed_login_ip_list:
 	print(i)
-
+print(succeed_ip_list)
+print(hostname_list)
+print(model_list)
 print('本次执行时长：%.2f'%(time.time()-start_time) + '秒')
 print("命令执行完毕，结果请查看log.txt文件")
