@@ -77,6 +77,7 @@ def retrieve_data(ipaddr):
     }
     try:
         with ConnectHandler(**connection_info) as conn:
+            #conn.enable()
             print('INFO: ',time.strftime('%x %X'),'已经登录设备：', ipaddr)
             output = conn.send_command('show version', use_textfsm=True)
             succeed_ip_list.append(ipaddr)
