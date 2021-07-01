@@ -109,7 +109,6 @@ with ThreadPoolExecutor(max_workers=5) as exe:
     ip_addresses = get_ip_address()
     results = exe.map(retrieve_data, ip_addresses)
 
-
 row_top_number = len(succeed_ip_list) + 2
 for hostname, ip, sn, uptime, model, os_version, image, row in zip(hostname_list, succeed_ip_list, sn_list, uptime_list, model_list, os_version_list, image_list, range(2, row_top_number)):
     ws.cell(row=row, column=1, value=hostname)
