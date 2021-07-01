@@ -12,6 +12,7 @@ import getpass
 import sys
 import time
 
+print('请把要执行的IP清单保存至device.txt文件')
 username = input("请输入设备用户名：")
 password = getpass.getpass(prompt='请输入密码:')
 #enpass = getpass.getpass(prompt='请输入enable密码:')
@@ -45,6 +46,7 @@ ws['E1'].fill=yellowFill
 ws['F1'].fill=yellowFill
 ws['G1'].fill=yellowFill
 
+file_time = time.strftime("%Y-%m-%d_%H_%M_%S", time.localtime())
 #print输出到txt文件
 class Logger(object):
 	def __init__(self, filename="Default.log"):
@@ -55,7 +57,7 @@ class Logger(object):
 		self.log.write(message)
 	def flush(self):
 		pass
-sys.stdout = Logger('log.txt')
+sys.stdout = Logger('log_' + file_time + '.log')
 
 start_time = time.time()
 
@@ -128,13 +130,14 @@ for row in ws.rows:
 for col, value in dims.items():
     ws.column_dimensions[col].width = value + 5
 
-wb.save('inventory.xlsx')
+wb.save('inventory_' + file_time +'.xlsx')
 
 print('下列主机登录失败，请手动检查：')
 for i in failed_login_ip_list:
 	print(i)
-print(succeed_ip_list)
-print(hostname_list)
-print(model_list)
+#print(succeed_ip_list)
+#print(hostname_list)
+#print(model_list)
 print('本次执行时长：%.2f'%(time.time()-start_time) + '秒')
-print("命令执行完毕，结果请查看log.txt文件")
+print("命令执行完毕，执行日志请查看" + 'log_' + file_time + '.log')
+print('执行结果请查看' + 'inventory_' + file_time +'.xlsx')
