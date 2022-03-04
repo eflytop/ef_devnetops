@@ -1,0 +1,37 @@
+---
+LH-Core:
+    hostname: 10.10.0.1
+    groups:
+        - cisco_group1
+Plant-B:
+    hostname: 10.20.0.1
+    groups:
+        - cisco_group2
+#Plant-C:
+#    hostname: 10.30.0.1
+#    groups:
+#       - cisco_group2
+ZZ-Core:
+    hostname: 10.40.0.1
+    username: cisco
+    password: cisco
+    groups:
+        - cisco_group1
+#TEST:
+#    hostname: 10.30.0.1
+#    platform: ios
+#ZZ-Core:
+#    hostname: 10.40.0.1
+#    username: cisco
+#    password: cisco
+#    platform: ios
+#sw1:
+#    hostname: 192.168.2.11
+#    username: python
+#    password: '123'
+#    platform: ios
+#    groups:
+#       - cisco_group1
+#    data:
+#        building: '1'
+#        level: '1'

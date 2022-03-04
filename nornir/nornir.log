@@ -1,0 +1,1324 @@
+2022-01-06 02:06:38,420 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interface']} on 4 hosts
+2022-01-06 02:06:40,315 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interface'
+
+2022-01-06 02:06:40,402 - nornir.core.task -    ERROR -      start() - Host 'ZZ-Core': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interface'
+
+2022-01-06 02:06:40,455 - nornir.core.task -    ERROR -      start() - Host 'Plant-B': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interface'
+
+2022-01-06 02:06:40,680 - nornir.core.task -    ERROR -      start() - Host 'LH-Core': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interface'
+
+2022-01-06 02:07:36,823 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 4 hosts
+2022-01-06 02:12:38,731 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip route'} on 4 hosts
+2022-01-06 02:17:09,160 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip route'} on 4 hosts
+2022-01-06 02:23:15,059 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip int brief'} on 4 hosts
+2022-01-06 02:24:43,203 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:24:43,203 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip int brief'} on 4 hosts
+2022-01-06 02:25:11,664 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:25:15,939 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:25:19,620 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:26:22,413 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:26:35,711 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip int brief'} on 4 hosts
+2022-01-06 02:29:03,162 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:29:05,962 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:29:30,340 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:29:33,299 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:30:58,957 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:31:02,011 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:31:30,211 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:31:32,783 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-01-06 02:31:52,646 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip int brief'} on 2 hosts
+2022-01-06 02:32:33,218 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip int brief'} on 2 hosts
+2022-01-06 02:49:00,428 -  nornir.core -     INFO -        run() - Running task 'config' with args {} on 4 hosts
+2022-01-06 03:02:49,394 -  nornir.core -     INFO -        run() - Running task '正在备份设备配置...' with args {} on 4 hosts
+2022-01-06 03:02:52,840 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task '正在备份设备配置...' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./backup_cfg.py", line 15, in backup_cfg
+    task.run(task=write_file, content=r.result['config']['running'], filename=str(task.host.name)+'-'+str(date.today())+'.cfg')
+NameError: name 'date' is not defined
+
+2022-01-06 03:02:54,137 - nornir.core.task -    ERROR -      start() - Host 'ZZ-Core': task '正在备份设备配置...' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./backup_cfg.py", line 15, in backup_cfg
+    task.run(task=write_file, content=r.result['config']['running'], filename=str(task.host.name)+'-'+str(date.today())+'.cfg')
+NameError: name 'date' is not defined
+
+2022-01-06 03:02:54,220 - nornir.core.task -    ERROR -      start() - Host 'LH-Core': task '正在备份设备配置...' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./backup_cfg.py", line 15, in backup_cfg
+    task.run(task=write_file, content=r.result['config']['running'], filename=str(task.host.name)+'-'+str(date.today())+'.cfg')
+NameError: name 'date' is not defined
+
+2022-01-06 03:02:54,457 - nornir.core.task -    ERROR -      start() - Host 'Plant-B': task '正在备份设备配置...' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "./backup_cfg.py", line 15, in backup_cfg
+    task.run(task=write_file, content=r.result['config']['running'], filename=str(task.host.name)+'-'+str(date.today())+'.cfg')
+NameError: name 'date' is not defined
+
+2022-01-06 03:04:29,832 -  nornir.core -     INFO -        run() - Running task '正在备份设备配置...' with args {} on 4 hosts
+2022-01-07 03:54:44,205 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-07 03:54:45,825 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-07 03:58:13,886 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-07 03:58:15,640 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-07 03:59:08,413 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-07 03:59:10,239 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-07 04:09:09,430 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-07 04:09:11,208 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-07 04:10:20,935 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-07 04:10:22,623 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-10 04:06:53,428 -  nornir.core -     INFO -        run() - Running task 'host_detail' with args {} on 4 hosts
+2022-01-10 04:08:15,754 -  nornir.core -     INFO -        run() - Running task 'host_detail' with args {} on 4 hosts
+2022-01-12 02:33:15,599 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-12 02:33:17,305 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-12 02:33:54,222 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-12 02:33:55,842 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 03:59:06,827 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip route'} on 4 hosts
+2022-01-19 03:59:23,001 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 03:59:24,413 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 04:10:43,469 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 04:10:45,013 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 04:13:48,283 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 04:13:49,749 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 04:15:48,107 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 04:15:49,644 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 04:23:06,624 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 04:23:08,260 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 04:23:08,261 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access Port1(nornir)']} on 4 hosts
+2022-01-19 04:23:09,126 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access Port1(nornir)']} on 4 hosts
+2022-01-19 04:23:09,907 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/3', 'description Access Port100(nornir)']} on 4 hosts
+2022-01-19 04:23:10,679 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access Port1(nornir)']} on 4 hosts
+2022-01-19 04:23:11,537 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access Port100(nornir)']} on 4 hosts
+2022-01-19 04:23:12,398 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access Port1(nornir)']} on 4 hosts
+2022-01-19 04:26:51,996 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 04:26:53,348 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 04:26:53,797 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access Port1(nornir)']} on 4 hosts
+2022-01-19 04:26:54,593 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access Port1(nornir)']} on 4 hosts
+2022-01-19 04:26:55,464 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/3', 'description Access Port100(nornir)']} on 4 hosts
+2022-01-19 04:26:56,303 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access Port1(nornir)']} on 4 hosts
+2022-01-19 04:26:57,163 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access Port100(nornir)']} on 4 hosts
+2022-01-19 04:26:58,019 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access Port1(nornir)']} on 4 hosts
+2022-01-19 20:22:33,252 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:22:34,803 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:23:01,565 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:23:03,200 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:23:21,557 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:23:23,072 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:24:38,175 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:24:39,689 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:25:23,307 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:25:24,922 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:26:27,754 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:26:29,110 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:27:12,479 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:27:13,925 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:27:55,274 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:27:56,872 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:28:17,384 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:28:18,881 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:28:46,794 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:28:48,329 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:29:06,820 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:29:08,067 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:29:42,832 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:29:44,281 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:30:39,790 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:30:41,278 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:31:08,366 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:31:09,836 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:32:17,641 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:32:19,010 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:32:22,389 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:32:23,881 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:34:19,578 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:34:21,054 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:39:15,041 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:39:16,551 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:39:39,791 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:39:41,094 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:40:45,447 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:40:46,902 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:41:03,346 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:41:04,857 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:41:43,921 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:41:45,537 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:42:41,911 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:42:43,475 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:45:11,499 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:45:13,083 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:48:43,732 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:48:45,251 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:49:22,554 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:49:23,999 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:50:26,485 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:50:27,762 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:51:47,428 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:51:48,898 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:53:09,463 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 4 hosts
+2022-01-19 20:53:11,062 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line: ^
+
+2022-01-19 20:54:04,423 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 3 hosts
+2022-01-19 20:54:05,896 - nornir.core.task -    ERROR -      start() - Host 'Plant-C': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/base_connection.py", line 1550, in send_command
+    structured_output = get_structured_data(
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 347, in get_structured_data
+    return _textfsm_parse(textfsm_obj, raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/utilities.py", line 319, in _textfsm_parse
+    textfsm_obj.ParseCmd(raw_output, attrs)
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 272, in ParseCmd
+    self.table = self._ParseCmdItem(self.raw, template_file=template_files[0])
+  File "/usr/local/lib/python3.8/site-packages/netmiko/_textfsm/_clitable.py", line 303, in _ParseCmdItem
+    for record in fsm.ParseText(cmd_input):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 897, in ParseText
+    self._CheckLine(line)
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 946, in _CheckLine
+    if self._Operations(rule, line):
+  File "/usr/local/lib/python3.8/site-packages/textfsm/parser.py", line 1026, in _Operations
+    raise TextFSMError('State Error raised. Rule Line: %s. Input Line: %s'
+textfsm.parser.TextFSMError: State Error raised. Rule Line: 40. Input Line:                            ^
+
+2022-01-19 20:54:53,985 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 3 hosts
+2022-01-19 20:55:33,729 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 3 hosts
+2022-01-19 20:56:09,289 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 3 hosts
+2022-01-19 20:56:10,927 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:56:11,714 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:56:12,565 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/3', 'description Access Port100(nornir)']} on 3 hosts
+2022-01-19 20:56:13,440 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:56:14,354 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access Port100(nornir)']} on 3 hosts
+2022-01-19 20:56:15,275 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:56:16,125 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:56:16,964 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:56:17,773 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show inter descrip'} on 3 hosts
+2022-01-19 20:58:29,279 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 3 hosts
+2022-01-19 20:58:30,821 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:58:31,623 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:58:32,414 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/3', 'description Access Port100(nornir)']} on 3 hosts
+2022-01-19 20:58:33,183 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:58:34,016 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access Port100(nornir)']} on 3 hosts
+2022-01-19 20:58:34,828 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:58:35,722 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:58:36,566 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access Port1(nornir)']} on 3 hosts
+2022-01-19 20:58:37,377 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show inter descrip'} on 3 hosts
+2022-01-19 21:00:47,049 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 3 hosts
+2022-01-19 21:00:48,568 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access to VLAN 1(nornir)']} on 3 hosts
+2022-01-19 21:00:49,451 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access to VLAN 1(nornir)']} on 3 hosts
+2022-01-19 21:00:50,303 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/3', 'description Access to VLAN 100(nornir)']} on 3 hosts
+2022-01-19 21:00:51,204 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access to VLAN 1(nornir)']} on 3 hosts
+2022-01-19 21:00:52,046 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access to VLAN 100(nornir)']} on 3 hosts
+2022-01-19 21:00:53,015 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access to VLAN 1(nornir)']} on 3 hosts
+2022-01-19 21:00:53,885 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access to VLAN 1(nornir)']} on 3 hosts
+2022-01-19 21:00:54,814 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access to VLAN 1(nornir)']} on 3 hosts
+2022-01-19 21:00:55,688 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show inter descrip'} on 3 hosts
+2022-01-19 21:01:30,427 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 3 hosts
+2022-01-19 21:01:31,849 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:01:32,671 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:01:33,531 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/3', 'description Access to VLAN 100 (via nornir)']} on 3 hosts
+2022-01-19 21:01:34,353 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:01:35,200 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access to VLAN 100 (via nornir)']} on 3 hosts
+2022-01-19 21:01:36,077 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:01:36,955 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:01:37,790 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:01:38,661 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show inter descrip'} on 3 hosts
+2022-01-19 21:02:15,348 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 3 hosts
+2022-01-19 21:02:17,035 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:02:18,018 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:02:18,935 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/3', 'description Access to VLAN 100 (via nornir)']} on 3 hosts
+2022-01-19 21:02:40,880 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh interface switchport', 'use_textfsm': True} on 3 hosts
+2022-01-19 21:02:42,438 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:02:43,426 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:02:44,333 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/3', 'description Access to VLAN 100 (via nornir)']} on 3 hosts
+2022-01-19 21:02:45,266 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:02:46,181 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/1', 'description Access to VLAN 100 (via nornir)']} on 3 hosts
+2022-01-19 21:02:47,089 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:02:47,891 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/0', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:02:48,775 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/2', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:02:49,647 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi0/3', 'description Access to VLAN 1 (via nornir)']} on 3 hosts
+2022-01-19 21:02:50,501 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi1/0', 'description Access to VLAN 20 (via nornir)']} on 3 hosts
+2022-01-19 21:02:51,524 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['interface Gi1/1', 'description Access to VLAN 20 (via nornir)']} on 3 hosts
+2022-01-19 21:02:53,089 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show inter descrip'} on 3 hosts
